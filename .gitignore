@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.Python
+venv/
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.vscode/
+.spyderproject/
+.spyderproject.ini
+
+# Data
+data/
+
+# Models
+models/
+
+# Results
