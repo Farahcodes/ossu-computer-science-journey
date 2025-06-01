@@ -1,7 +1,6 @@
-## 6.100A PSet 1: Part C
-## Name: [Your Name]
-## Time Spent: [Your Time]
-## Collaborators: [Your Collaborators]
+# Problem C: Finding the Best Savings Rate
+# This script calculates the best annual savings rate needed to reach a target down payment for a house.
+# It uses a bisection search algorithm to find the minimum rate of return required within a specified tolerance.
 
 ##############################################
 ## Get user input for initial_deposit below ##

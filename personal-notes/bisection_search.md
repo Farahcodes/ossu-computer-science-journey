@@ -3,7 +3,7 @@
 This exercise focused on using **bisection search** to find the minimum **annual rate of return (r)** required to save for a house down payment within a specific timeframe (3 years), given an initial deposit. The savings needed to be within a **tolerance** ($100) of the target down payment.
 
 ---
-## 1. Bisection Search Algorithm 🔎
+## 1. Bisection Search Algorithm
 
 * **Definition:** An efficient search algorithm that repeatedly divides a sorted search interval in half to find a target value or a value satisfying a specific condition.
 * **How it Works:**
@@ -15,7 +15,7 @@ This exercise focused on using **bisection search** to find the minimum **annual
 * **Goal in this Exercise:** To find the *lowest* `r` such that `savings(r)` fell within the target window: `[down_payment - tolerance, down_payment + tolerance]`. When a valid `r` was found, we tried to find an even smaller one by setting `high_bound = guess_r`.
 
 ---
-## 2. Epsilon (ε) and Stopping Conditions 🛑
+## 2. Epsilon (ε) and Stopping Conditions
 
 * **Epsilon (ε):**
     * **Definition:** A small, positive number representing a **tolerance** or **precision threshold**. It's used to determine when an iterative numerical method has found a solution that is "close enough."
@@ -30,7 +30,7 @@ This exercise focused on using **bisection search** to find the minimum **annual
     2.  **Maximum Iterations (Implicit/Safety Net):** A `for` loop with a maximum iteration count (e.g., `range(100)`) was used as a safeguard against unexpected infinite loops, though the `epsilon` condition was intended to trigger the break earlier.
 
 ---
-## 3. Edge Case Handling ⚠️
+## 3. Edge Case Handling
 
 * **Importance:** Crucial for robust programs. Addressing scenarios outside the "typical" case often differentiates a good solution from a basic one.
 * **Examples from this Exercise:**
@@ -40,7 +40,7 @@ This exercise focused on using **bisection search** to find the minimum **annual
         * *Logic:* `if savings_at_max_rate < min_target_savings:` (checked *after* the first edge case but *before* bisection).
 
 ---
-## 4. Problem-Specific Application Details 🏡💰
+## 4. Problem-Specific Application Details
 
 * **Savings Formula:** `savings = initial_deposit * (1 + r/12)**months`
 * **Target Condition:** The final savings amount had to be within `$100` of the `target_down_payment` (25% of $800,000). This defined the window: `[$199,900, $200,100]`.
